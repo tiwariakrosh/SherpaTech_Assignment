@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Assignment Task</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href=""><img src="./image/logo.PNG" width="180" alt="logo"></a>
+            <div class="switch">
+                <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox" checked>
+                <label for="language-toggle"></label>
+                <span class="on">AR</span>
+                <span class="off">EN</span>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main>
+            <div class="center">
+                <h1><span class="en">Mytvfilx</span>
+                    <span class="ar">تلفاز فليكس</span>
+                </h1>
+                <div class="iconContainer">
+                    <img src="./image/display.PNG" alt="display">
+                </div>
+                <ul class="list item" id="listItem">
+                    <li class="slide">
+                        <span class="fa-solid fa-circle-check"></span>
+                        <p><span class="en">Confirming file is secure</span><span class="ar">تأكيد الملف آمن</span></p>
+                    </li>
+                    <li class="slide">
+                        <span class="fa-solid fa-circle-check"></span>
+                        <p><span class="en">Optimizing content for your device</span><span class="ar">تحسين المحتوى
+                                لجهازك</span></p>
+                    </li>
+                    <li class="slide">
+                        <span class="fa-solid fa-circle-check"></span>
+                        <p><span class="en">Generating your safe access <strong>PIN</strong> code...</span>
+                            <span class="ar">إنشاء رمز رقم التعريف الشخصي للوصول الآمن ...</span>
+                        </p>
+                    </li>
+                    <li class="slide">
+                        <span class="fa-solid fa-circle-check"></span>
+                        <p><span class="en">Ready!</span><span class="ar">مستعد!</span></p>
+                    </li>
+                </ul>
+                <div class="item" id="listItem1">
+                    <div class="progress-bar-container">
+                        <div class="progress-bar-indicator W_30"></div>
+                    </div>
+                    <ul class="list">
+                        <li>
+                            <span class="fa-solid smallCircle">1</span>
+                            <p><span class="en">Enter your mobile number</span><span class="ar">
+                                    أدخل رقم هاتفك المحمول</span></p>
+                        </li>
+                        <li>
+                            <span class="fa-solid smallCircle">2</span>
+                            <p><span class="en">Recieve a <strong>PIN</strong> and access NOW!</span>
+                                <span class="ar">احصل على رقم التعريف الشخصي وقم بالوصول الآن!</span>
+                            </p>
+                        </li>
+                    </ul>
+                    <form action="">
+                        <div class="input">
+                            <div class="iconNum">
+                                <i class="fa-solid fa-phone-volume"></i>
+                                <span>05</span>
+                            </div>
+                            <input type="text" placeholder="Mobile Number" name="fname" id="MobileNumber" required>
+                        </div>
+                        <span role="alert" class="errorMesssage" id="numError" aria-hidden="true">
+                            <spam class="en">* Please enter mobile number</spam>
+                            <spam class="ar">رقم الهاتف المحمول</spam>
+                        </span>
+                        <div class="button">
+                            <button type="submit" id='btn1'>
+                                <span class="en">
+                                    Continue
+                                </span>
+                                <span class="ar">استمر</span>
+                                <span class="border-br"></span>
+                                <span class="blink">»</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="center item" id="listItem2">
+                    <div class="progress-bar-container">
+                        <div class="progress-bar-indicator w_75"></div>
+                    </div>
+                    <ul class="list">
+                        <li>
+                            <span class="fa-solid fa-circle-check"></span>
+                            <p><span class="en">Enter your mobile number</span> <span class="ar">أدخل رقم هاتفك
+                                    المحمول</span></p>
+                        </li>
+                        <li>
+                            <span class="fa-solid smallCircle">2</span>
+                            <p><span class="en">Enter<strong>PIN</strong> and access NOW!</span>
+                                <span class="ar">احصل على رقم التعريف الشخصي وقم بالوصول الآن!</span></p>
+                        </li>
+                    </ul>
+                    <form action="">
+                        <div class="input pinInp">
+                            <div class="iconNum">
+                                <span class="en">PIN</span>
+                                <span class="ar">رقم التعريف الشخصي</span>
+                            </div>
+                            <input type="text" placeholder="****" value="" name="" id="" required>
+                            <span role="alert" class="errorMesssage" id="numError" aria-hidden="true">
+                                <span class="en"> * Please enter PIN Code</span>
+                                <span class="ar">* أدخل رقم التعريف الشخصي وقم بالوصول الآن!</span>
+                            </span>
+                        </div>
+                        <div class="button">
+                            <button id="btn2" type="menu">
+                                <span class="en">Subscribe</span>
+                                <span class="ar">اشترك</span>
+                                <span class="border-br"></span>
+                                <span class="blink">»</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="center item" id="listItem3">
+                    <div class="progress-bar-container">
+                        <div class="progress-bar-indicator w_100"></div>
+                    </div>
+                    <div class="welcomeText">
+                        <h2><span class="en">Welcome!</span><span class="ar">أهلا وسهلا!</span></h2>
+                        <p><span class="en">Yoou will be redirected to the portal in a few seconds.</span>
+                            <span class="ar">ستتم إعادة توجيهك إلى البوابة في غضون ثوانٍ قليلة</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div class="text">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quidem voluptatum quasi at quam
+                eum maiores labore perspiciatis dolore maxime enim temporibus recusandae nam assumenda quis
+                ipsum culpa, tempore incidunt quos adipisci dolor sapiente? Nisi odio est sed veniam saepe
+                dolorum veritatis beatae labore, inventore nemo quaerat, incidunt ipsam sapiente neque. Veniam,
+                quaerat minima distinctio fugiat voluptatum iure incidunt? Ipsam esse nisi reiciendis dicta
+                doloremque! Non omnis, assumenda dolorem fugiat itaque est ducimus consequuntur, eveniet ratione
+                illo impedit nisi minima enim ipsa eligendi saepe beatae nihil perferendis eaque molestias
+                dignissimos! Minus, dignissimos reiciendis inventore eveniet ex totam eligendi illo, architecto
+                velit qui sed voluptatem quo eum debitis culpa, quisquam saepe. Totam iusto recusandae aut
+                doloribus. Quam, sequi excepturi dicta vitae distinctio dolorem labore reprehenderit accusantium
+                voluptatum incidunt a dolores error neque perferendis perspiciatis nisi doloremque quas est quo
+                cumque soluta sapiente modi? Quo in tempora deleniti adipisci nulla! Assumenda, culpa.</p>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
