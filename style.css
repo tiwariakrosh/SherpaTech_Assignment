@@ -19,6 +19,7 @@ html {
 
 body {
     background-color: var(--white);
+    position: relative;
 }
 
 ul li,
@@ -155,12 +156,18 @@ input.check-toggle-round-flat:checked+label:after {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
     flex-direction: column;
+    position: relative;
 }
 
-main {
-    height: 595px;
+.container main {
+    height: calc(100vh - 158px);
+}
+
+.text {
+    display: block;
+    height: 100%;
+    width: 100%
 }
 
 .center {
